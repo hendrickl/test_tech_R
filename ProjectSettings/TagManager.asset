@@ -8,6 +8,8 @@ TagManager:
   - UIPause
   - UIPlay
   - UIBack
+  - GoodAnswer
+  - BadAnswer
   layers:
   - Default
   - TransparentFX

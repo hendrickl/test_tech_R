@@ -110,6 +110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d328d303b759f734e9c68bc46cf51c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timer: 11
+  _prefabQCM: {fileID: 5832541582815614308, guid: 0015921ed349dcc49af4c38160ac0003,
+    type: 3}
   _prefabVideo: {fileID: 9041709248912357721}
   _videoPlayer: {fileID: 9041709248912357722}
 --- !u!1 &9041709248912357721
@@ -359,6 +362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d328d303b759f734e9c68bc46cf51c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timer: 11
+  _prefabQCM: {fileID: 5832541582815614308, guid: 0015921ed349dcc49af4c38160ac0003,
+    type: 3}
   _prefabVideo: {fileID: 9041709248912357721}
   _videoPlayer: {fileID: 9041709248912357722}
 --- !u!1 &9041709250073155774
@@ -471,5 +477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d328d303b759f734e9c68bc46cf51c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timer: 11
+  _prefabQCM: {fileID: 5832541582815614308, guid: 0015921ed349dcc49af4c38160ac0003,
+    type: 3}
   _prefabVideo: {fileID: 9041709248912357721}
   _videoPlayer: {fileID: 9041709248912357722}

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -5,8 +6,15 @@ public class VideoManager : MonoBehaviour
 {
     private bool _isPlaying;
     private GameObject _videoToSpawn;
+    [SerializeField] private float _timer;
+    [SerializeField] private GameObject _prefabQCM;
     [SerializeField] private GameObject _prefabVideo;
     [SerializeField] private VideoPlayer _videoPlayer;
+
+    private void Start()
+    {
+        StartCoroutine(DisplayQCM());
+    }
 
     private void OnMouseDown()
     {
@@ -29,7 +37,6 @@ public class VideoManager : MonoBehaviour
         {
             BackToPanelMenu();
         }
-
     }
 
     private void InstantiateVideo()
@@ -54,12 +61,17 @@ public class VideoManager : MonoBehaviour
     {
         _videoPlayer.Pause();
         _isPlaying = false;
-        print("Pause : " + _videoPlayer.isPaused);
     }
 
     private void BackToPanelMenu()
     {
         _isPlaying = false;
         _prefabVideo.gameObject.SetActive(false);
+    }
+
+    private IEnumerator DisplayQCM()
+    {
+        yield return new WaitForSeconds(_timer);
+        _prefabQCM.SetActive(true);
     }
 }
